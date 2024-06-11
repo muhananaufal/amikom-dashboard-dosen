@@ -17,37 +17,30 @@
 	</head>
 	<body>
 		<!-- Sidebar Start -->
-		<div class="sidebar">
-			<nav class="navbar">
-				<a href="index.html" class="navbar-brand d-flex align-items-center ms-4 mt-3">
-					<img src="../images/logo-amikom.png" alt="" width="20%" class="ms-2" />
-					<p class="primary-color fw-bolder fs-3 mb-0 mt-1 ms-3">AMIKOM</p>
-				</a>
-				<div class="navbar-nav w-100 mt-40px">
-					<a href="index.html" class="nav-item nav-link d-flex align-items-center unactive-sidebar mb-15px ps-4"><i class="bi bi-house-door-fill fs-4 ms-2"></i><span class="ms-4">Dashboard</span></a>
-					<a href="tambah-data.html" class="nav-item nav-link d-flex align-items-center unactive-sidebar mb-15px ps-4"><i class="bi bi-plus-circle-fill fs-4 ms-2"></i><span class="ms-4">Add Data</span></a>
-					<a href="rekapitulasi-nilai.html" class="nav-item nav-link d-flex align-items-center active primary-color mb-15px ps-4"><i class="bi bi-file-text-fill fs-4 ms-2"></i><span class="ms-4">Recapitulations</span></a>
-					<a href="akun.html" class="nav-item nav-link d-flex align-items-center unactive-sidebar mb-15px ps-4"><i class="bi bi-person-fill fs-4 ms-2"></i><span class="ms-4">Accounts</span></a>
-					<a href="pengaturan.html" class="nav-item nav-link d-flex align-items-center unactive-sidebar ps-4"><i class="bi bi-gear-fill fs-4 ms-2"></i><span class="ms-4">Setting</span></a>
-				</div>
-			</nav>
+		<div class="sidebar position-absolute">
+			<a href="index.html" class="navbar-brand d-flex align-items-center ms-4 mt-4">
+				<img src="images/logo-amikom.png" alt="" width="20%" class="ms-2" />
+				<p class="primary-color fw-bolder fs-4 mb-0 mt-1 ms-3">AMIKOM</p>
+			</a>
+			<div class="navbar-nav w-100 mt-40px">
+				<a href="index.html" class="nav-item nav-link d-flex align-items-center unactive-sidebar mb-15px ps-4"><i class="bi bi-house-door-fill fs-4 ms-2"></i><span class="ms-4">Dashboard</span></a>
+				<a href="rekapitulasi-nilai.html" class="nav-item nav-link d-flex align-items-center active primary-color unactive-sidebar mb-15px ps-4"><i class="bi bi-file-text-fill fs-4 ms-2"></i><span class="ms-4">Recaps</span></a>
+				<a href="akun.html" class="nav-item nav-link d-flex align-items-center unactive-sidebar mb-15px ps-4"><i class="bi bi-person-fill fs-4 ms-2"></i><span class="ms-4">Accounts</span></a>
+				<a href="pengaturan.html" class="nav-item nav-link d-flex align-items-center unactive-sidebar mb-15px ps-4"><i class="bi bi-gear-fill fs-4 ms-2"></i><span class="ms-4">Setting</span></a>
+				<a href="login.html" class="nav-item nav-link d-flex align-items-center unactive-sidebar mb-15px ps-4"><i class="bi bi-box-arrow-right fs-4 ms-2"></i><span class="ms-4">Logout</span></a>
+			</div>
 		</div>
 		<!-- Sidebar End -->
 
 		<!-- Content Start -->
-		<div class="content">
+		<div class="content container-fluid">
 			<!-- Navbar Start -->
 			<nav class="navbar navbar-expand bg-lightcustom sticky-top px-4 py-3">
-				<h1 class="fw-semibold fs-2 secondary-color pt-3 ps-3">REKAPITULASI NILAI MAHASISWA AMIKOM YOGYAKARTA</h1>
+				<h1 class="fw-semibold fs-2 secondary-color pt-3 ps-3">DASHBOARD DOSEN AMIKOM</h1>
 				<div class="navbar-nav ms-auto">
 					<div class="nav-item">
-						<a href="login.html" class="nav-link">
-							<i class="bi bi-box-arrow-right primary-color bg-tertiary fs-4 me-2"></i>
-						</a>
-					</div>
-					<div class="nav-item">
-						<a href="pengaturan.html" class="nav-link">
-							<i class="bi bi-gear-fill primary-color bg-tertiary fs-4 me-2"></i>
+						<a href="#" class="nav-link sidebar-toggler flex-shrink-0">
+							<i class="bi bi-list primary-color bg-tertiary fs-4 me-2"></i>
 						</a>
 					</div>
 					<div class="nav-item">
@@ -59,31 +52,43 @@
 			</nav>
 			<!-- Navbar End -->
 			<!--  Main Start -->
-			<div class="bg-tertiary pt-40px pe-40px ps-40px" style="height: 90.18">
-				<h2 class="fw-semibold fs-5 mb-0 secondary-color">PEMROGRAMAN WEB - SEMESTER GENAP TA.2023/2024</h2>
+			<div class="bg-tertiary pt-30px pe-40px ps-40px" style="min-height: 100vh">
+				<div class="pt-3px row d-flex justify-content-md-between justify-content-center">
+					<select class=" col-md-6 form-select select-mata-kuliah fw-semibold fs-5 secondary-color ms-md-3" aria-label="Large select example" style="width: 300px" >
+						<!-- mb-2 fs-5 -->
+						<option selected clas>PEMROGRAMAN WEB - SEMESTER 2 TA.2023/2024</option>
+						<option value="1">WEB BACKEND - SEMESTER 3 TA.2023/2024</option>
+						<option value="2">PERENCANAAN APLIKASI - SEMESTER 3 TA.2023/2024</option>
+						<option value="3">UI/UX DESIGN - SEMESTER 4 TA.2023/2024</option>
+					</select>
+					<form class="col-md-6 d-flex justify-content-center justify-content-md-end" role="search">
+						<!-- mb-2 -->
+						<input class="form-control float-end me-md-2 mt-4 mt-md-0" type="search" placeholder="Search..." aria-label="Search" style="width: 180px !important" />
+					</form>
+				</div>
 				<div class="row g-4 pt-2">
 					<div class="col-12">
-						<div class="bg-lightcustom rounded-4 d-flex align-items-center px-3 py-2 px-4 py-4">
-							<div class="d-flex -content-between w-100">
-								<table style="width: 100%">
+						<div class="bg-lightcustom shadow-sm rounded-4 d-flex align-items-center px-3 py-2 px-4 py-4">
+							<div class="p-3 table-responsive">
+								<table class="text-center">
 									<tr>
-										<th style="width: 5%" class="pb-2"></th>
-										<th style="width: 10%" class="pb-2 queternary-color">No</th>
-										<th style="width: 10%" class="pb-2 queternary-color">NIM</th>
-										<th style="width: 20%" class="pb-2 queternary-color">Nama Mahasiswa</th>
-										<th style="width: 10%" class="pb-2 queternary-color">Kehadiran</th>
-										<th style="width: 10%" class="pb-2 queternary-color">Tugas</th>
-										<th style="width: 10%" class="pb-2 queternary-color">Responsi</th>
-										<th style="width: 10%" class="pb-2 queternary-color">UTS</th>
-										<th style="width: 10%" class="pb-2 queternary-color">UAS</th>
-										<th style="width: 10%" class="pb-2 queternary-color">Keterangan</th>
+										<th style="width: 20px" class="pb-2 px-2"></th>
+										<th style="width: 200px" class="pb-2 px-2 disabled-color">No</th>
+										<th style="width: 200px" class="pb-2 px-2 disabled-color">NIM</th>
+										<th style="width: 200px" class="pb-2 px-2 disabled-color">Nama Mahasiswa</th>
+										<th style="width: 200px" class="pb-2 px-2 queternary-color">Kehadiran</th>
+										<th style="width: 200px" class="pb-2 px-2 queternary-color">Tugas</th>
+										<th style="width: 200px" class="pb-2 px-2 queternary-color">Kuis</th>
+										<th style="width: 200px" class="pb-2 px-2 queternary-color">Responsi</th>
+										<th style="width: 200px" class="pb-2 px-2 queternary-color">UTS</th>
+										<th style="width: 200px" class="pb-2 px-2 queternary-color">UAS</th>
+										<th style="width: 200px" class="pb-2 px-2 disabled-color">Keterangan</th>
 									</tr>
-									<hr />
 									<tr>
 										<td class="border-top border-bottom py-3">
-											<a href="#">
+											<button type="button" class="border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#1">
 												<i class="bi bi-pencil-square fs-4 queternary-color"></i>
-											</a>
+											</button>
 										</td>
 										<td class="border-top border-bottom py-3">1</td>
 										<td class="border-top border-bottom py-3">23.01.4989</td>
@@ -93,183 +98,267 @@
 										<td class="border-top border-bottom py-3">100</td>
 										<td class="border-top border-bottom py-3">100</td>
 										<td class="border-top border-bottom py-3">100</td>
+										<td class="border-top border-bottom py-3">100</td>
 										<td class="border-top border-bottom py-3"><span class="btn btn-content">LULUS: A</span></td>
+										<div class="modal fade" id="1" tabindex="-1" aria-labelledby="1Label" aria-hidden="true">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h1 class="modal-title fs-5" id="1Label">Edit Nilai Mahasiswa</h1>
+														<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+													</div>
+													<div class="modal-body">
+														<form>
+															<div class="row">
+																<div class="mb-3 col-12">
+																	<label for="recipient-name" class="col-form-label">NIM</label>
+																	<input type="text" class="form-control disabled-color" disabled value="23.01.4989" />
+																</div>
+																<div class="mb-3 col-12">
+																	<label for="recipient-name" class="col-form-label">NIM</label>
+																	<input type="text" class="form-control disabled-color" disabled value="Muhana Naufal Al-Atsari" />
+																</div>
+																<div class="mb-3 col-6">
+																	<label for="recipient-name" class="col-form-label">Kehadiran</label>
+																	<input type="text" class="form-control" value="14" />
+																</div>
+																<div class="mb-3 col-6">
+																	<label for="recipient-name" class="col-form-label">Tugas</label>
+																	<input type="text" class="form-control" value="100" />
+																</div>
+																<div class="mb-3 col-6">
+																	<label for="recipient-name" class="col-form-label">Kuis</label>
+																	<input type="text" class="form-control" value="100" />
+																</div>
+																<div class="mb-3 col-6">
+																	<label for="recipient-name" class="col-form-label">Responsi</label>
+																	<input type="text" class="form-control" value="100" />
+																</div>
+																<div class="mb-3 col-6">
+																	<label for="recipient-name" class="col-form-label">UTS</label>
+																	<input type="text" class="form-control" value="100" />
+																</div>
+																<div class="mb-3 col-6">
+																	<label for="recipient-name" class="col-form-label">UAS</label>
+																	<input type="text" class="form-control" value="100" />
+																</div>
+															</div>
+														</form>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn bg-secondary tertiary-color" data-bs-dismiss="modal">Cancel</button>
+														<button type="button" class="btn bg-primary tertiary-color" data-bs-dismiss="modal">Update</button>
+													</div>
+												</div>
+											</div>
+										</div>
 									</tr>
 									<tr>
 										<td class="border-top border-bottom py-3">
-											<a href="#">
+											<button type="button" class="border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#2">
 												<i class="bi bi-pencil-square fs-4 queternary-color"></i>
-											</a>
+											</button>
 										</td>
 										<td class="border-top border-bottom py-3">2</td>
-										<td class="border-top border-bottom py-3">23.01.4989</td>
-										<td class="border-top border-bottom py-3">Muhana Naufal Al-Atsari</td>
-										<td class="border-top border-bottom py-3">14</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3"><span class="btn btn-content">LULUS: A</span></td>
+										<td class="border-top border-bottom py-3">23.99.1234</td>
+										<td class="border-top border-bottom py-3">Lorep ipsum</td>
+										<td class="border-top border-bottom py-3">10</td>
+										<td class="border-top border-bottom py-3">80</td>
+										<td class="border-top border-bottom py-3">87</td>
+										<td class="border-top border-bottom py-3">82</td>
+										<td class="border-top border-bottom py-3">90</td>
+										<td class="border-top border-bottom py-3">81</td>
+										<td class="border-top border-bottom py-3"><span class="btn btn-content">LULUS: B</span></td>
+										<div class="modal fade" id="2" tabindex="-1" aria-labelledby="2Label" aria-hidden="true">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h1 class="modal-title fs-5" id="2Label">Edit Nilai Mahasiswa</h1>
+														<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+													</div>
+													<div class="modal-body">
+														<form>
+															<div class="row">
+																<div class="mb-3 col-12">
+																	<label for="recipient-name" class="col-form-label">NIM</label>
+																	<input type="text" class="form-control disabled-color" disabled value="23.99.1234" />
+																</div>
+																<div class="mb-3 col-12">
+																	<label for="recipient-name" class="col-form-label">NIM</label>
+																	<input type="text" class="form-control disabled-color" disabled value="Lorep ipsum" />
+																</div>
+																<div class="mb-3 col-6">
+																	<label for="recipient-name" class="col-form-label">Kehadiran</label>
+																	<input type="text" class="form-control" value="10" />
+																</div>
+																<div class="mb-3 col-6">
+																	<label for="recipient-name" class="col-form-label">Tugas</label>
+																	<input type="text" class="form-control" value="80" />
+																</div>
+																<div class="mb-3 col-6">
+																	<label for="recipient-name" class="col-form-label">Kuis</label>
+																	<input type="text" class="form-control" value="87" />
+																</div>
+																<div class="mb-3 col-6">
+																	<label for="recipient-name" class="col-form-label">Responsi</label>
+																	<input type="text" class="form-control" value="82" />
+																</div>
+																<div class="mb-3 col-6">
+																	<label for="recipient-name" class="col-form-label">UTS</label>
+																	<input type="text" class="form-control" value="90" />
+																</div>
+																<div class="mb-3 col-6">
+																	<label for="recipient-name" class="col-form-label">UAS</label>
+																	<input type="text" class="form-control" value="81" />
+																</div>
+															</div>
+														</form>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn bg-secondary tertiary-color" data-bs-dismiss="modal">Cancel</button>
+														<button type="button" class="btn bg-primary tertiary-color" data-bs-dismiss="modal">Update</button>
+													</div>
+												</div>
+											</div>
+										</div>
 									</tr>
 									<tr>
 										<td class="border-top border-bottom py-3">
-											<a href="#">
+											<button type="button" class="border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#3">
 												<i class="bi bi-pencil-square fs-4 queternary-color"></i>
-											</a>
+											</button>
 										</td>
 										<td class="border-top border-bottom py-3">3</td>
-										<td class="border-top border-bottom py-3">23.01.4989</td>
-										<td class="border-top border-bottom py-3">Muhana Naufal Al-Atsari</td>
-										<td class="border-top border-bottom py-3">14</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
+										<td class="border-top border-bottom py-3">23.99.1245</td>
+										<td class="border-top border-bottom py-3">Dolor amet</td>
+										<td class="border-top border-bottom py-3">11</td>
+										<td class="border-top border-bottom py-3">90</td>
+										<td class="border-top border-bottom py-3">91</td>
+										<td class="border-top border-bottom py-3">92</td>
+										<td class="border-top border-bottom py-3">89</td>
+										<td class="border-top border-bottom py-3">94</td>
 										<td class="border-top border-bottom py-3"><span class="btn btn-content">LULUS: A</span></td>
+										<div class="modal fade" id="3" tabindex="-1" aria-labelledby="3Label" aria-hidden="true">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h1 class="modal-title fs-5" id="3Label">Edit Nilai Mahasiswa</h1>
+														<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+													</div>
+													<div class="modal-body">
+														<form>
+															<div class="row">
+																<div class="mb-3 col-12">
+																	<label for="recipient-name" class="col-form-label">NIM</label>
+																	<input type="text" class="form-control disabled-color" disabled value="23.99.1245" />
+																</div>
+																<div class="mb-3 col-12">
+																	<label for="recipient-name" class="col-form-label">NIM</label>
+																	<input type="text" class="form-control disabled-color" disabled value="Dolor amet" />
+																</div>
+																<div class="mb-3 col-6">
+																	<label for="recipient-name" class="col-form-label">Kehadiran</label>
+																	<input type="text" class="form-control" value="11" />
+																</div>
+																<div class="mb-3 col-6">
+																	<label for="recipient-name" class="col-form-label">Tugas</label>
+																	<input type="text" class="form-control" value="90" />
+																</div>
+																<div class="mb-3 col-6">
+																	<label for="recipient-name" class="col-form-label">Kuis</label>
+																	<input type="text" class="form-control" value="91" />
+																</div>
+																<div class="mb-3 col-6">
+																	<label for="recipient-name" class="col-form-label">Responsi</label>
+																	<input type="text" class="form-control" value="92" />
+																</div>
+																<div class="mb-3 col-6">
+																	<label for="recipient-name" class="col-form-label">UTS</label>
+																	<input type="text" class="form-control" value="89" />
+																</div>
+																<div class="mb-3 col-6">
+																	<label for="recipient-name" class="col-form-label">UAS</label>
+																	<input type="text" class="form-control" value="94" />
+																</div>
+															</div>
+														</form>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn bg-secondary tertiary-color" data-bs-dismiss="modal">Cancel</button>
+														<button type="button" class="btn bg-primary tertiary-color" data-bs-dismiss="modal">Update</button>
+													</div>
+												</div>
+											</div>
+										</div>
 									</tr>
 									<tr>
 										<td class="border-top border-bottom py-3">
-											<a href="#">
+											<button type="button" class="border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#4">
 												<i class="bi bi-pencil-square fs-4 queternary-color"></i>
-											</a>
+											</button>
 										</td>
 										<td class="border-top border-bottom py-3">4</td>
-										<td class="border-top border-bottom py-3">23.01.4989</td>
-										<td class="border-top border-bottom py-3">Muhana Naufal Al-Atsari</td>
-										<td class="border-top border-bottom py-3">14</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3"><span class="btn btn-content">LULUS: A</span></td>
-									</tr>
-									<tr>
-										<td class="border-top border-bottom py-3">
-											<a href="#">
-												<i class="bi bi-pencil-square fs-4 queternary-color"></i>
-											</a>
-										</td>
-										<td class="border-top border-bottom py-3">5</td>
-										<td class="border-top border-bottom py-3">23.01.4989</td>
-										<td class="border-top border-bottom py-3">Muhana Naufal Al-Atsari</td>
-										<td class="border-top border-bottom py-3">14</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3"><span class="btn btn-content">LULUS: A</span></td>
-									</tr>
-									<tr>
-										<td class="border-top border-bottom py-3">
-											<a href="#">
-												<i class="bi bi-pencil-square fs-4 queternary-color"></i>
-											</a>
-										</td>
-										<td class="border-top border-bottom py-3">6</td>
-										<td class="border-top border-bottom py-3">23.01.4989</td>
-										<td class="border-top border-bottom py-3">Muhana Naufal Al-Atsari</td>
-										<td class="border-top border-bottom py-3">14</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3"><span class="btn btn-content">LULUS: A</span></td>
-									</tr>
-									<tr>
-										<td class="border-top border-bottom py-3">
-											<a href="#">
-												<i class="bi bi-pencil-square fs-4 queternary-color"></i>
-											</a>
-										</td>
-										<td class="border-top border-bottom py-3">7</td>
-										<td class="border-top border-bottom py-3">23.01.4989</td>
-										<td class="border-top border-bottom py-3">Muhana Naufal Al-Atsari</td>
-										<td class="border-top border-bottom py-3">14</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3"><span class="btn btn-content">LULUS: A</span></td>
-									</tr>
-									<tr>
-										<td class="border-top border-bottom py-3">
-											<a href="#">
-												<i class="bi bi-pencil-square fs-4 queternary-color"></i>
-											</a>
-										</td>
-										<td class="border-top border-bottom py-3">8</td>
-										<td class="border-top border-bottom py-3">23.01.4989</td>
-										<td class="border-top border-bottom py-3">Muhana Naufal Al-Atsari</td>
-										<td class="border-top border-bottom py-3">14</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3"><span class="btn btn-content">LULUS: A</span></td>
-									</tr>
-									<tr>
-										<td class="border-top border-bottom py-3">
-											<a href="#">
-												<i class="bi bi-pencil-square fs-4 queternary-color"></i>
-											</a>
-										</td>
-										<td class="border-top border-bottom py-3">9</td>
-										<td class="border-top border-bottom py-3">23.01.4989</td>
-										<td class="border-top border-bottom py-3">Muhana Naufal Al-Atsari</td>
-										<td class="border-top border-bottom py-3">14</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3"><span class="btn btn-content">LULUS: A</span></td>
-									</tr>
-									<tr>
-										<td class="border-top border-bottom py-3">
-											<a href="#">
-												<i class="bi bi-pencil-square fs-4 queternary-color"></i>
-											</a>
-										</td>
-										<td class="border-top border-bottom py-3">10</td>
-										<td class="border-top border-bottom py-3">23.01.4989</td>
-										<td class="border-top border-bottom py-3">Muhana Naufal Al-Atsari</td>
-										<td class="border-top border-bottom py-3">14</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3"><span class="btn btn-content">LULUS: A</span></td>
-									</tr>
-									<tr>
-										<td class="border-top border-bottom py-3">
-											<a href="#">
-												<i class="bi bi-pencil-square fs-4 queternary-color"></i>
-											</a>
-										</td>
-										<td class="border-top border-bottom py-3">11</td>
-										<td class="border-top border-bottom py-3">23.01.4989</td>
-										<td class="border-top border-bottom py-3">Muhana Naufal Al-Atsari</td>
-										<td class="border-top border-bottom py-3">14</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3"><span class="btn btn-content">LULUS: A</span></td>
-									</tr>
-									<tr>
-										<td class="border-top border-bottom py-3">
-											<a href="#">
-												<i class="bi bi-pencil-square fs-4 queternary-color"></i>
-											</a>
-										</td>
+										<td class="border-top border-bottom py-3">23.99.7654</td>
+										<td class="border-top border-bottom py-3">Aku Sigma</td>
 										<td class="border-top border-bottom py-3">12</td>
-										<td class="border-top border-bottom py-3">23.01.4989</td>
-										<td class="border-top border-bottom py-3">Muhana Naufal Al-Atsari</td>
-										<td class="border-top border-bottom py-3">14</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
-										<td class="border-top border-bottom py-3">100</td>
+										<td class="border-top border-bottom py-3">89</td>
+										<td class="border-top border-bottom py-3">93</td>
+										<td class="border-top border-bottom py-3">87</td>
+										<td class="border-top border-bottom py-3">98</td>
 										<td class="border-top border-bottom py-3">100</td>
 										<td class="border-top border-bottom py-3"><span class="btn btn-content">LULUS: A</span></td>
+										<div class="modal fade" id="4" tabindex="-1" aria-labelledby="4Label" aria-hidden="true">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h1 class="modal-title fs-5" id="4Label">Edit Nilai Mahasiswa</h1>
+														<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+													</div>
+													<div class="modal-body">
+														<form>
+															<div class="row">
+																<div class="mb-3 col-12">
+																	<label for="recipient-name" class="col-form-label">NIM</label>
+																	<input type="text" class="form-control disabled-color" disabled value="23.99.7654" />
+																</div>
+																<div class="mb-3 col-12">
+																	<label for="recipient-name" class="col-form-label">NIM</label>
+																	<input type="text" class="form-control disabled-color" disabled value="Aku Sigma" />
+																</div>
+																<div class="mb-3 col-6">
+																	<label for="recipient-name" class="col-form-label">Kehadiran</label>
+																	<input type="text" class="form-control" value="12" />
+																</div>
+																<div class="mb-3 col-6">
+																	<label for="recipient-name" class="col-form-label">Tugas</label>
+																	<input type="text" class="form-control" value="89" />
+																</div>
+																<div class="mb-3 col-6">
+																	<label for="recipient-name" class="col-form-label">Kuis</label>
+																	<input type="text" class="form-control" value="93" />
+																</div>
+																<div class="mb-3 col-6">
+																	<label for="recipient-name" class="col-form-label">Responsi</label>
+																	<input type="text" class="form-control" value="87" />
+																</div>
+																<div class="mb-3 col-6">
+																	<label for="recipient-name" class="col-form-label">UTS</label>
+																	<input type="text" class="form-control" value="98" />
+																</div>
+																<div class="mb-3 col-6">
+																	<label for="recipient-name" class="col-form-label">UAS</label>
+																	<input type="text" class="form-control" value="100" />
+																</div>
+															</div>
+														</form>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn bg-secondary tertiary-color" data-bs-dismiss="modal">Cancel</button>
+														<button type="button" class="btn bg-primary tertiary-color" data-bs-dismiss="modal">Update</button>
+													</div>
+												</div>
+											</div>
+										</div>
 									</tr>
 								</table>
 							</div>
@@ -277,10 +366,13 @@
 					</div>
 				</div>
 			</div>
+
 			<!-- Main End -->
 		</div>
 		<!-- Content End -->
 		<!-- BS Javascript -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+		<!-- Custom JS -->
+		<script src="js/script.js"></script>
 	</body>
 </html>

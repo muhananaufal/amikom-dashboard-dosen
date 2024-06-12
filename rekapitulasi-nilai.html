@@ -17,7 +17,7 @@
 	</head>
 	<body>
 		<!-- Sidebar Start -->
-		<div class="sidebar position-absolute">
+		<div class="sidebar position-absolute pt-2">
 			<a href="index.html" class="navbar-brand d-flex align-items-center ms-4 mt-4">
 				<img src="images/logo-amikom.png" alt="" width="20%" class="ms-2" />
 				<p class="primary-color fw-bolder fs-4 mb-0 mt-1 ms-3">AMIKOM</p>
@@ -26,8 +26,8 @@
 				<a href="index.html" class="nav-item nav-link d-flex align-items-center unactive-sidebar mb-15px ps-4"><i class="bi bi-house-door-fill fs-4 ms-2"></i><span class="ms-4">Dashboard</span></a>
 				<a href="rekapitulasi-nilai.html" class="nav-item nav-link d-flex align-items-center active primary-color unactive-sidebar mb-15px ps-4"><i class="bi bi-file-text-fill fs-4 ms-2"></i><span class="ms-4">Recaps</span></a>
 				<a href="akun.html" class="nav-item nav-link d-flex align-items-center unactive-sidebar mb-15px ps-4"><i class="bi bi-person-fill fs-4 ms-2"></i><span class="ms-4">Accounts</span></a>
-				<a href="pengaturan.html" class="nav-item nav-link d-flex align-items-center unactive-sidebar mb-15px ps-4"><i class="bi bi-gear-fill fs-4 ms-2"></i><span class="ms-4">Setting</span></a>
-				<a href="login.html" class="nav-item nav-link d-flex align-items-center unactive-sidebar mb-15px ps-4"><i class="bi bi-box-arrow-right fs-4 ms-2"></i><span class="ms-4">Logout</span></a>
+				<a href="pengaturan.html" class="reverse-hidden-icon nav-item nav-link d-flex align-items-center unactive-sidebar mb-15px ps-4"><i class="bi bi-gear-fill fs-4 ms-2"></i><span class="ms-4">Setting</span></a>
+				<a href="login.html" class="reverse-hidden-icon nav-item nav-link d-flex align-items-center unactive-sidebar mb-15px ps-4"><i class="bi bi-box-arrow-right fs-4 ms-2"></i><span class="ms-4">Logout</span></a>
 			</div>
 		</div>
 		<!-- Sidebar End -->
@@ -38,9 +38,15 @@
 			<nav class="navbar navbar-expand bg-lightcustom sticky-top px-4 py-3">
 				<h1 class="fw-semibold fs-2 secondary-color pt-3 ps-3">DASHBOARD DOSEN AMIKOM</h1>
 				<div class="navbar-nav ms-auto">
-					<div class="nav-item">
+					<div class="nav-item d-flex align-items-center">
 						<a href="#" class="nav-link sidebar-toggler flex-shrink-0">
 							<i class="bi bi-list primary-color bg-tertiary fs-4 me-2"></i>
+						</a>
+						<a href="#" class="nav-link flex-shrink-0 hidden-icon">
+							<i class="bi bi-box-arrow-right primary-color bg-tertiary fs-4 me-2"></i>
+						</a>
+						<a href="#" class="nav-link flex-shrink-0 hidden-icon">
+							<i class="bi bi-gear-fill primary-color bg-tertiary fs-4 me-2"></i>
 						</a>
 					</div>
 					<div class="nav-item">
@@ -54,7 +60,7 @@
 			<!--  Main Start -->
 			<div class="bg-tertiary pt-30px pe-40px ps-40px" style="min-height: 100vh">
 				<div class="pt-3px row d-flex justify-content-md-between justify-content-center">
-					<select class=" col-md-6 form-select select-mata-kuliah fw-semibold fs-5 secondary-color ms-md-3" aria-label="Large select example" style="width: 300px" >
+					<select class="col-md-6 form-select select-mata-kuliah fw-semibold fs-5 secondary-color ms-md-3" aria-label="Large select example" style="width: 300px">
 						<!-- mb-2 fs-5 -->
 						<option selected clas>PEMROGRAMAN WEB - SEMESTER 2 TA.2023/2024</option>
 						<option value="1">WEB BACKEND - SEMESTER 3 TA.2023/2024</option>
@@ -70,7 +76,7 @@
 					<div class="col-12">
 						<div class="bg-lightcustom shadow-sm rounded-4 d-flex align-items-center px-3 py-2 px-4 py-4" style="max-width: 1800px !important">
 							<div class="p-3 table-responsive">
-								<table class="text-center" >
+								<table class="text-center">
 									<tr>
 										<th style="width: 20px" class="pb-2 px-2"></th>
 										<th style="width: 200px" class="pb-2 px-2 disabled-color">No</th>

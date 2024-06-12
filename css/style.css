@@ -52,7 +52,7 @@
 
 @media (max-width: 767px) {
 	.bg-hero {
-			display: none !important;
+		display: none !important;
 	}
 }
 
@@ -96,14 +96,31 @@ p {
 /* Sidebar hidden on mobile view */
 @media (max-width: 768px) {
 	.sidebar {
-			width: 0;
+		width: 0;
 	}
 
 	.content {
-			margin-left: 0 !important;
+		margin-left: 0 !important;
 	}
 	.sidebar.active {
-			width: 200px;
+		width: 200px;
+	}
+	
+	.hidden-icon {
+		position: absolute !important;
+		display: none !important;
+		z-index: -9999 !important;
+	}
+
+	.hidden-icon .bi-box-arrow-right {
+		position: absolute !important;
+		display: none !important;
+		z-index: -9999 !important;
+	}
+	.hidden-icon .bi-gear-fill {
+		position: absolute !important;
+		display: none !important;
+		z-index: -9999 !important;
 	}
 }
 
@@ -113,7 +130,12 @@ p {
 /* Sidebar shown on desktop view */
 @media (min-width: 769px) {
 	.sidebar-toggler {
-			display: none;
+		display: none;
+	}
+	.reverse-hidden-icon {
+		position: absolute !important;
+		display: none !important;
+		z-index: -9999 !important;
 	}
 }
 
